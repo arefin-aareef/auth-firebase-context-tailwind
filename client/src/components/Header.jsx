@@ -1,12 +1,18 @@
 /* eslint-disable no-unused-vars */
-import React from 'react';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
-    return (
-        <div>
-            <h2>This is Header</h2>
-        </div>
-    );
+  return (
+    <div>
+      <div className="navbar bg-primary text-primary-content">
+        <a className="btn btn-ghost normal-case text-xl">Auth Practice</a>
+        <Link className="btn btn-ghost normal-case text-xl" to="/">Home</Link>
+        <Link className="btn btn-ghost normal-case text-xl" to="/login">Login</Link>
+        <Link className="btn btn-ghost normal-case text-xl" to="/register">Register</Link>
+      </div>
+    </div>
+  );
 };
 
 export default Header;
