@@ -54,7 +54,7 @@ const Login = () => {
             </div>
             <label className="label">
                 <Link to="/register" className="label-text-alt link link-hover">
-                First Time Here?
+                Do not have an account?
                 </Link>
             </label>
           </form>
