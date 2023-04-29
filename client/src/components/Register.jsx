@@ -1,8 +1,13 @@
 /* eslint-disable no-unused-vars */
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../providers/AuthProviders';
 
 const Register = () => {
+
+    const {user} = useContext(AuthContext)
+
+    console.log(user);
 
     const handleRegister = event => {
         event.preventDefault();
